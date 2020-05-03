@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<title>Proper Banter Podcast</title>
+<meta charset="utf-8" name="viewport" content="device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	
+	html {
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		font-family: "advent-pro", Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		background-color: darkgrey;
+	}
+	
+	.headings {
+		background-color: black;
+		width: 100%;
+		color: white;
+		font-size: 30px;
+		padding: 20px;
+	}
+	
+	.prghs {
+		margin: 20px;
+		padding: 5px;
+		color: black;
+		width: 90%;
+		font-size: 20px;
+	}
+	
+	#navbar {
+		overflow: hidden;
+		background-color: black;
+		padding: 90px 10px;
+		transition: 0.4s;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 90;
+	}
+	
+	#navbar a {
+		float: left;
+		color: white;
+		text-align: center;
+		padding: 12px;
+		text-decoration: none;
+		font-size: 18px;
+		line-height: 25px;
+		border-radius: 4px;
+	}
+	
+	#navbar #logo {
+		font-size: 48px;
+		font-weight: 500;
+		transition: 0.4s;
+		font: "advent-pro";
+	}
+	
+	#navbar a:hover {
+		background-color: #323232;
+		color: white;
+	}
+	
+	#navbar-right {
+		float: right;
+		padding-right: 20px;
+	}
+	
+	#spotifylink {
+		position: fixed;
+		z-index: 99;
+		top: 90px;
+		left: 45%;
+		transition: 0.4s;
+	}
+	
+	#youtubelink {
+		position: fixed;
+		z-index: 98;
+		top: 90px;
+		left: 52%;
+		transition: 0.4s;
+	}
+	
+	#instagramlink {
+		position: fixed;
+		z-index: 97;
+		top: 90px;
+		left: 59%;
+		transition: 0.4s;
+	}
+	
+	
+	@media screen and (max-width: 580px) {
+		#navbar {
+			padding: 20px 10px !important;
+		}
+		
+		#navbar a {
+			float: none;
+			display: block;
+			text-align: left;
+		}
+		
+		#navbar-right {
+			float: none;
+		}
+		
+		#spotifylink {
+			z-index: -1;
+		}
+		
+		#youtubelink {
+			z-index: -1;
+		}
+		
+		#instagramlink {
+			z-index: -1;
+		}
+	}
+	
+	.fa {
+		padding: 10px;
+		font-size: 30px;
+		width: 30px;
+		text-align: center;
+		text-decoration: none;
+		margin; 5px 10px;
+		border-radius: 50%;
+	}
+	
+	.fa:hover {
+		opacity: 0.7;
+	}
+	
+	.fa-spotify {
+		color: white;
+		background-color: #1db954;
+	}
+	
+	.fa-youtube-play {
+		color: white;
+		background-color: #ff0000;
+	}
+	
+	.fa-instagram {
+		color: white;
+		background-color: #405de6;
+	}
+	
+	.accordion {
+		background-color: #EDEDED;
+		color: #444;
+		cursor: pointer;
+		padding: 15px;
+		text-align: center;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+		border: 2px solid #555555;
+		border-radius: 8px;
+		left: 30px;
+		position: relative;
+	}
+	
+	.active, .accordion:hover {
+		background-color: #555555;
+		color: whitesmoke;
+	}
+	
+	
+	.panel {
+		padding: 0 18px;
+		background-color: darkgray;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		left: 30px;
+		position: relative;
+	}
+	
+	</style>
+</head>
+
+<body>
+	
+	<div id="navbar">
+		<a href="#LinkToTop" id="logo">PROPER BANTER</a>
+		<div id="navbar-right">
+			<a href="#LinkToAboutUs">About Us</a>
+			<a href="#LinkToContact">Contact</a>	
+		</div>
+	</div>
+		
+	<div id="spotifylink">
+		<a href="https://open.spotify.com/show/64HjD02HQIe7HZqMUt7wix" class="fa fa-spotify"></a>
+	</div>
+	
+	<div id="youtubelink">
+		<a href="#" class="fa fa-youtube-play"></a>
+	</div>
+	
+	<div id="instagramlink">
+		<a href="https://www.instagram.com/proper_banterpod/?hl=en" class="fa fa-instagram"></a>
+	</div>
+	
+	<a name="LinkToTop"></a>
+	
+	<div style="padding-top: 300px;">
+		<p class="prghs"><b>&nbsp; &nbsp; &nbsp;An Audio experience that will change your state of mind for the better or worse, and alter your preception of what truely goes on in the mind of young-adult men.</b></p>
+	</div>
+	
+	<div>
+		<p class="prghs">Newest Episode:</p>
+		<img alt="Us Having Fun" src="images/ProperBanterCover1.png" height="auto" width="500px" style="width: 80%">
+	</div>
+	
+	<div style="padding-top: 300px">
+		<a name="LinkToAboutUs"></a>
+	    <h2 class="headings">About us</h2>
+		<p class="prghs">&nbsp; &nbsp; &nbsp;We are a group of freinds who are using this poscast as a way to talk and keep oursevles occupied during the great plague of 2020. It also gives us an oppritunity to learn something new, such as video editting or making a website. You can learn more about each of us indevidually below, just click on the button with thle name of the person you would like to learn more about.</p>
+		<ul style="margin:  10%; list-style-type: none;">
+				<li>img
+					<button class="accordion">Conlan</button>
+					<div class="panel">
+						<p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</li>
+				<li> img
+					<button class="accordion">Seth</button>
+					<div class="panel">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</li>
+				<li> img
+					<button class="accordion">Jack</button>
+					<div class="panel">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</li>
+				<li> img
+					<button class="accordion">Terick</button>
+					<div class="panel">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</li>
+				<li> img
+					<button class="accordion">Eldon</button>
+					<div class="panel">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</li>
+				<li> img
+					<button class="accordion">Jacob</button>
+					<div class="panel">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</li>
+				<li> img
+					<button class="accordion">Reese</button>
+					<div class="panel">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</li>
+				<li> img
+					<button class="accordion">Henry</button>
+					<div class="panel">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</li>
+				<li> img
+					<button class="accordion">Zap</button>
+					<div class="panel">
+						<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+					</div>
+				</li>
+			</ul>
+	</div>
+	
+	<div style="padding-top: 300px">
+		<a name="LinkToContact"></a>
+		<h2 class="headings">Contact</h2>
+		<p class="prghs">&nbsp; &nbsp; &nbsp;Feel Free to Email us at FakeEmail@Gmail.com. We would love to recive emails with constructive critisms or ideas for future podcasts.</p>
+	</div>
+	
+<script>
+	
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+			document.getElementById("navbar").style.padding = "30px 10px";
+			document.getElementById("logo").style.fontSize = "32px";
+			document.getElementById("spotifylink").style.top = "30px";
+			document.getElementById("spotifylink").style.left = "30%";
+			document.getElementById("youtubelink").style.top = "30px";
+			document.getElementById("youtubelink").style.left = "37%";
+			document.getElementById("instagramlink").style.top = "30px";
+			document.getElementById("instagramlink").style.left = "44%";
+		} else {
+			document.getElementById("navbar").style.padding = "80px 10px";
+			document.getElementById("logo").style.fontSize = "48px";
+			document.getElementById("spotifylink").style.top = "80px";
+			document.getElementById("spotifylink").style.left = "45%";
+			document.getElementById("youtubelink").style.top = "80px";
+			document.getElementById("youtubelink").style.left = "52%";
+			document.getElementById("instagramlink").style.top = "80px";
+			document.getElementById("instagramlink").style.left = "59%";
+		}
+			
+	}
+	
+	</script>
+	
+<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+	
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
+	
+</body>
+</html>
