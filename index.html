@@ -44,9 +44,22 @@
 		background: black;
 	}
 	
-	@media screen and (max-width: 700px) {
+	.sbarcontent {
+		position: fixed;
+		z-index: 50;
+		top: 250px;
+		left: 5%;
+	}
+	
+	@media screen and (max-width: 1900px) {
 		.row {
 			flex-direction: column;
+		}
+		
+		.sbarcontent {
+			position: relative;
+			top: 0%;
+			left: 30%;
 		}
 	}
 	
@@ -162,12 +175,32 @@
 			z-index: -1;
 		}
 		
+		#ylinksmall {
+			z-index 99;
+			position: absolute;
+			top: 250px;
+			left: 25%;
+			transition: 0.4s;
+		}
+		
 		#instagramlink {
 			z-index: -1;
 		}
 		
+		#ilinksmall {
+			z-index 99;
+			position: absolute;
+			top: 250px;
+			left: 65%;
+			transition: 0.4s;
+		}
+		
 		#navbar #logo {
 			font-size: 32px;
+		}
+		
+		.sbarcontent {
+			left: 0%;
 		}
 	}
 	
@@ -274,7 +307,15 @@
 		<a href="#" class="fa fa-youtube-play"></a>
 	</div>
 	
+	<div id="ylinksmall">
+		<a href="#" class="fa fa-youtube-play"></a>
+	</div>
+	
 	<div id="instagramlink">
+		<a href="https://www.instagram.com/proper_banterpod/?hl=en" class="fa fa-instagram"></a>
+	</div>
+	
+	<div id="ilinksmall">
 		<a href="https://www.instagram.com/proper_banterpod/?hl=en" class="fa fa-instagram"></a>
 	</div>
 	
@@ -284,6 +325,7 @@
 	
 	<div class="side">
 		<p style="padding-top: 300px">Your ads here</p>
+		<img src="images/BeerInSnowStock.jpeg" width="200px" class="sbarcontent" alt="Fake Ad">
 	</div>
 	
 	<div class="main">
@@ -292,7 +334,15 @@
 	</div>
 	
 	<div style="padding-top: 200px">
-		<p class="prghs">Newest Episode:</p>
+		<p class="prghs">Updates:<br><br>&nbsp; &nbsp; &nbsp; On our most recent episode we had our first guest.</p>
+	</div>
+	
+	<div style="padding-top: 200px">
+		<p class="prghs">Content:</p>
+		<video width="100%" controls>
+			<source src="images/PB_intro.mp4" type="video/mp4">
+			Your browser doesn't support video
+		</video>
 		<img alt="Us Having Fun" src="images/ProperBanterCover1.png" height="auto" width="500px" style="width: 80%">
 	</div>
 	
@@ -370,7 +420,7 @@
 	
 	
 	<div class="footer">
-		<p style="color: white">Footer</p>
+		<h4 style="color: white">Don't forget to check us out on Spotify</h4>
 	</div>
 	
 <script>
